@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Cards App</title>
+  <style>
+    body {
+      text-align: center;
+    }
+    
+    /* Container for the user cards, styled with a grid layout */
+    #user-cards-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+      gap: 10px; /* Space between cards */
+    }
+
+    /* Individual card styling */
+    .user-card {
+      border: 1px solid #494646;
+      padding: 10px;
+      margin: 10px;
+      width: 200px;
+      text-align: center;
+      border-radius: 8px; /* Rounded corners */
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <h1>User Cards App</h1>
+  
+  <!-- Container to hold dynamically created user cards -->
+  <div id="user-cards-container"></div>
+
+  <script src="index.js"></script> <!-- Link to JavaScript file -->
+</body>
+</html>
